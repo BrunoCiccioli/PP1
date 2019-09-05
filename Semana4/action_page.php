@@ -1,13 +1,15 @@
 <?php
 echo "Su nombre es ".$_GET['nombre']; 
 echo "Su apellido es ".$_GET['apellido']; 
-$archivo=fopen('usuarios.txt', 'a');
-fwrite($archivo, $_GET['nombre']. "\n");
-fclose($archivo);
 $MiObjeto=new stdClass();
-$MiObjeto->nombre="Roberto";
-$MiObjeto->apellido="Carlos";
+$MiObjeto->nombre=$_GET['nombre'];
+$MiObjeto->apellido=$_GET['apellido'];
 
 
-var_dump($MiObjeto);
+
+
+var_dump(json_encode($MiObjeto));
+$archivo=fopen('usuarios.txt', 'a');
+fwrite($archivo, json_encode($MiObjeto));
+fclose($archivo);
 ?>
