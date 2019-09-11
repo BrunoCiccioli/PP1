@@ -8,8 +8,16 @@ $MiObjeto->apellido=$_GET['apellido'];
 
 
 
-var_dump(json_encode($MiObjeto));
+//var_dump(json_encode($MiObjeto));
+
 $archivo=fopen('usuarios.txt', 'a');
-fwrite($archivo, json_encode($MiObjeto));
+fwrite($archivo, json_encode($MiObjeto)."\n");
+fclose($archivo);
+
+$archivo = fopen("usuarios.txt", "r") or die("Unable to open file!");
+// Output one line until end-of-file
+while(!feof($archivo)) {
+  echo fgets($archivo) . "<br>";
+}
 fclose($archivo);
 ?>
