@@ -1,0 +1,6 @@
+{"nombre":"mauricio","apellido":"ga\u00f1u"}
+{"nombre":"lucas","apellido":"gonzalez"}
+{"nombre":"luis","apellido":"herrera"}
+{"nombre":"matias","apellido":"rodriguez"}
+{"nombre":"omar","apellido":"jofre"}
+{"nombre":"Mauricio","apellido":"Ga\u00f1u"}
