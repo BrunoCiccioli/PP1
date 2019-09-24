@@ -1,0 +1,6 @@
+{"Usuario":"9898","Contrase\u00f1a":"lkl"}
+{"Usuario":"","Contrase\u00f1a":""}
+{"Usuario":"878787","Contrase\u00f1a":"iuiu"}
+{"Usuario":"878787","Contrase\u00f1a":""}
+{"Usuario":"","Contrase\u00f1a":""}
+{"Usuario":"Bruno","Contrase\u00f1a":"123456"}
